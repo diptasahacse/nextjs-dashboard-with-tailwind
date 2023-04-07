@@ -1,8 +1,12 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Navbar = () => {
+  const { asPath } = useRouter();
+
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-neutral text-neutral-content">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -55,42 +59,34 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className=" hover:cursor-pointer normal-case text-xl">
+          <i class="ri-terminal-fill"></i>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <Link href="/" className={`${asPath == "/" ? "active" : ""}`}>
+              Home
+            </Link>
           </li>
-          <li tabIndex={0}>
-            <a>
-              Parent
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2">
-              <li>
-                <a>Submenu 1</a>
-              </li>
-              <li>
-                <a>Submenu 2</a>
-              </li>
-            </ul>
+
+          <li>
+            <Link href="/about" className={`${asPath == "/about" ? "active" : ""}`}>
+              About
+            </Link>
           </li>
           <li>
-            <a>Item 3</a>
+            <Link href="/dashboard" className={`${asPath == "/dashboard" ? "active" : ""}`}>
+              Dashboard
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <button type="" className="btn btn-primary"><i class="ri-exchange-line"></i></button>
+        <button type="" className="btn btn-primary">
+          <i class="ri-exchange-line"></i>
+        </button>
       </div>
     </div>
   );
