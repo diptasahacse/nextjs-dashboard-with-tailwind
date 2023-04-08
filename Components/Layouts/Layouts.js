@@ -4,13 +4,14 @@ import Footer from "./Footer";
 import { useRouter } from "next/router";
 
 const Layouts = ({ children }) => {
-  const router = useRouter()
-  console.log(router.asPath)
+  const router = useRouter();
+  console.log(router.asPath.split("/")[1]);
   return (
     <div>
-      <Navbar />
+      {router.asPath.split("/")[1] === "dashboard" || <Navbar />}
       <div>{children}</div>
-      <Footer />
+
+      {router.asPath.split("/")[1] === "dashboard" || <Footer />}
     </div>
   );
 };
