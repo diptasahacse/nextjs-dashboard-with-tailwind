@@ -6,17 +6,17 @@
   },
   {
     "title": "Users",
-    "slug": "/",
+    "slug": "/dashboard/users",
     "icon": "ri-user-4-fill"
   },
   {
     "title": "Products",
-    "slug": "/",
+    "slug": "/dashboard/products",
     "icon": "ri-store-3-line"
   },
   {
     "title": "Manage Products",
-    "slug": "/",
+    "slug": "/dashboard/manage-products",
     "icon": "ri-tools-fill"
   },
   {
