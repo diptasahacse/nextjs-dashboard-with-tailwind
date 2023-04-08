@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Dashboard",
+    "slug": "/dashboard",
+    "icon": "ri-dashboard-line"
+  },
+  {
+    "title": "Users",
+    "slug": "/",
+    "icon": "ri-user-4-fill"
+  },
+  {
+    "title": "Products",
+    "slug": "/",
+    "icon": "ri-store-3-line"
+  },
+  {
+    "title": "Manage Products",
+    "slug": "/",
+    "icon": "ri-tools-fill"
+  },
+  {
+    "title": "Settings",
+    "slug": "/dashboard/settings",
+    "icon": "ri-settings-2-line"
+  }
+]

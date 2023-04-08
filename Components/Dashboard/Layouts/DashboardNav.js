@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const DashboardNav = ({ open, setOpen }) => {
@@ -28,10 +29,10 @@ const DashboardNav = ({ open, setOpen }) => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="justify-between">
+              <Link href='/dashboard/profile' className="justify-between">
                 Profile
                 <span className="badge">New</span>
-              </a>
+              </Link>
             </li>
             <li>
               <a>Settings</a>

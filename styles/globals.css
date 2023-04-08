@@ -18,3 +18,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Scrollbar sidebar - dashboard */
+#dashboard-sidebar::-webkit-scrollbar {
+  width: 2px;
+}
+#dashboard-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+#dashboard-sidebar::-webkit-scrollbar-thumb {
+  background: rgb(158, 158, 158);
+  border-radius: 5px;
+}
+
+#dashboard-main-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+#dashboard-main-content::-webkit-scrollbar-track {
+  background: #bababaad;
+}
+#dashboard-main-content::-webkit-scrollbar-thumb {
+  background: rgb(174, 174, 174);
+  border-radius: 10px;
+}

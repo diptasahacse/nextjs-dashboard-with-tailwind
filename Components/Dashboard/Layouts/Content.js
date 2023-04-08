@@ -6,11 +6,11 @@ const Content = ({ children, open, setOpen }) => {
   return (
     <div
       id="dashboard-main-content"
-      className="w-full  overflow-x-hidden bg-base-200"
+      className="w-full  overflow-y-auto bg-base-200"
     >
       <div className="h-full">
         <DashboardNav open={open} setOpen={setOpen} />
-        <div id="dashboard-content" className="overflow-y-auto bg-base-200">
+        <div id="dashboard-content" className="bg-base-200">
           <div className="p-4">{children}</div>
         </div>
         <DashboardFooter />
