@@ -1,11 +1,21 @@
 import Layouts from "../Components/Layouts/Layouts";
 import "remixicon/fonts/remixicon.css";
 import "../styles/globals.css";
+import DashboardLayout from "../Components/Dashboard/Layouts/DashboardLayout";
+import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
-    <Layouts>
-      <Component {...pageProps} />
-    </Layouts>
+    <>
+      {router.asPath.split("/")[1] === "dashboard" && (
+        <DashboardLayout>{<Component {...pageProps} />}</DashboardLayout>
+      )}
+      {router.asPath.split("/")[1] === "dashboard" || (
+        <Layouts>
+          <Component {...pageProps} />
+        </Layouts>
+      )}
+    </>
   );
 }
 
