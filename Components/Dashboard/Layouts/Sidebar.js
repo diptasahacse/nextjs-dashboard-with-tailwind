@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Sidebar = () => {
-  const [open, setOpen] = useState(true);
+const Sidebar = ({open, setOpen}) => {
   return (
     <div
       id="dashboard-sidebar"
