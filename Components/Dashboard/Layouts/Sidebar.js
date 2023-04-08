@@ -1,12 +1,11 @@
 import React from "react";
-import { useState } from "react";
 
 const Sidebar = ({ open, setOpen }) => {
   return (
     <div
       id="dashboard-sidebar"
-      className={`bg-dark-purple duration-500   p-5 pt-8 ${
-        open ? "w-72" : "w-0 hidden"
+      className={`bg-primary duration-500   p-5 pt-8 ${
+        open ? "w-72" : "w-20"
       } text-white relative`}
     >
       Sidebar

@@ -60,7 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className=" hover:cursor-pointer normal-case text-xl">
-          <i class="ri-terminal-fill"></i>
+          <i className="ri-terminal-fill"></i>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -85,7 +85,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <button type="" className="btn btn-primary">
-          <i class="ri-exchange-line"></i>
+          <i className="ri-exchange-line"></i>
         </button>
       </div>
     </div>
