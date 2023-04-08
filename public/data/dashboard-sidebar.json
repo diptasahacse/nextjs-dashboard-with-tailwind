@@ -1,27 +1,27 @@
 [
   {
     "title": "Dashboard",
-    "slug": "/dashboard",
+    "slug": "dashboard",
     "icon": "ri-dashboard-line"
   },
   {
     "title": "Users",
-    "slug": "/dashboard/users",
+    "slug": "dashboard/users",
     "icon": "ri-user-4-fill"
   },
   {
     "title": "Products",
-    "slug": "/dashboard/products",
+    "slug": "dashboard/products",
     "icon": "ri-store-3-line"
   },
   {
     "title": "Manage Products",
-    "slug": "/dashboard/manage-products",
+    "slug": "dashboard/manage-products",
     "icon": "ri-tools-fill"
   },
   {
     "title": "Settings",
-    "slug": "/dashboard/settings",
+    "slug": "dashboard/settings",
     "icon": "ri-settings-2-line"
   }
 ]

@@ -14,11 +14,11 @@ const Sidebar = ({ open, setOpen }) => {
       <div className="sticky bg-primary p-5 top-0">
         <div className=" inline-flex gap-2 items-center">
           <span className="flex h-7 w-7  text-lg bg-purple-800 rounded-md items-center justify-center">
-            <i class="ri-code-fill"></i>
+            <i className="ri-code-fill"></i>
           </span>
           <h3
             className={`font-semibold origin-left duration-300  ${
-              !open && "scale-0"
+              !open && "hidden"
             }`}
           >
             Brand
@@ -34,7 +34,7 @@ const Sidebar = ({ open, setOpen }) => {
                 key={index}
               >
                 <span className="text-2xl block float-left">
-                  <i class={item.icon}></i>
+                  <i className={item.icon}></i>
                 </span>
                 <Link
                   className={`text-base font-medium flex-1 ${
